@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tab</title>
+</head>
+<body>
+    <div id="tab">
+        <nav class="nav_tabs">
+            <ul>
+                <li class="navActive">标签一</li>
+                <li>标签二</li>
+                <li>标签三</li>
+            </ul>
+            <div class="addBtn">+</div>
+        </nav>
+        <div class="tabs_sections">
+            <section class="sectionActive">内容一</section>
+            <section>内容二</section>
+            <section>内容三</section>
+        </div>
+    </div>
+<script type="text/javascript" src="tab.js"></script>
+<style>
+#tab{
+    width: 600px;
+    margin: 0 auto;
+    clear: both;
+    border: 1px solid #e5e5e5;
+}
+.nav_tabs{
+    position: relative;
+}
+.nav_tabs .addBtn{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    font-size: 26px;
+    cursor: pointer;
+    z-index:9999;
+}
+.nav_tabs ul{
+    clear: both;
+    height:40px;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0 10px 0 10px;
+    margin: 0;
+}
+.nav_tabs ul li{
+    list-style: none;
+    float: left;
+    padding: 8px 25px;
+}
+.nav_tabs ul .navActive{
+    border-right: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    background: #fff;
+    position: relative;
+    top: 0px;
+    height: 25px;
+}
+.tabs_sections section{
+    display: none;
+}
+.tabs_sections .sectionActive{
+    display: block;
+}
+</style>
+</body>
+</html>
